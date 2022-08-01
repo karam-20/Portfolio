@@ -1,0 +1,25 @@
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0.5rem 0.6rem rgba(0, 0, 0, 0.1));
+}
+.box-text {
+  font-size: 12px;
+  margin-right: 10px;
+  background: #f5f7f9;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.box-text span {
+  font-weight: 600;
+}
+.whatsapp-float {
+  margin-bottom: -5px;
+}
+.whatsapp a {
+  color: #262626;
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+.container-ctc {
+  margin: 2rem 0;
+  color: #262626;
+}
+.heading-ctc {
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.form-contact {
+  display: flex;
+
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+.input-feild {
+  margin: 8px 0;
+  padding: 10px 10px;
+  resize: none;
+  border: none;
+  background: #f5f7f9;
+  border-radius: 8px;
+}
+.contact-btn {
+  margin-top: 20px;
+  max-width: 80px;
+  padding: 12px 2px;
+  border: none;
+  background: #ec4900;
+  color: white;
+  margin-left: 220px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.contact-btn:hover {
+  transition: all 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background: #262626;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 5px 30px;
+  }
+  .contact-btn {
+    margin: 20px 80px 0 170px;
+  }
+}

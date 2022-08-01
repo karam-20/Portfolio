@@ -1,0 +1,23 @@
+.project-heading {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+.project-container {
+  max-width: 890px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 5rem;
+  color: black;
+  filter: drop-shadow(0 0.5rem 0.6rem rgba(0, 0, 0, 0.1));
+}
+@media (max-width: 768px) {
+  .project-container {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+}
