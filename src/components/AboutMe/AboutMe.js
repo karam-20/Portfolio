@@ -1,12 +1,13 @@
 import React from "react";
 import "./AboutMe.css";
 import aboutme from "./aboutme.jpg";
-import html from "./html.svg";
-import bootstrap from "./bootstrap.svg";
-import clang from "./clang.svg";
-import css from "./css.svg";
-import js from "./js.svg";
-import react from "./react.svg";
+import {
+  skillsFrontend,
+  aboutMe,
+  backendLanguages,
+  backendFrameworks,
+  backendDatabases,
+} from "./aboutMeContent";
 
 const AboutMe = () => {
   return (
@@ -15,55 +16,76 @@ const AboutMe = () => {
         <div className="about-title">
           <h1>About me</h1>
           <p>
-            <span className="quotes">" </span>Hi, I'm Karampal Jangir, a
-            self-taught passionate FrontEnd developer from India, currently
-            working myself as a FrontEnd engineer. I've been building stuff on
-            the web since when I was in 2nd year of my college, I've made some
-            side projects and I also posses magical powers of using react to
-            build delightful user interfaces.<span className="quotes"> "</span>
+            <span className="quotes">" </span>
+            {aboutMe}
+            <span className="quotes"> "</span>
           </p>
         </div>
         <div className="about-img">
           <img src={aboutme} alt="logo" />
         </div>
       </div>
-      <div className="skillset">
-        <div className="skill-title">My Skillsets</div>
-        <div className="cards">
-          <div class="card">
-            <div className="card-image">
-              <img src={html} alt="logo" />
-            </div>
-          </div>
+      <div className="my-skills">
+        <div className="skill-heading">
+          <h2 className="skill-main-heading">FrontEnd</h2>
+        </div>
+        <div className="skill-description">
+          {skillsFrontend.map((data, index) => {
+            return (
+              <div key={index} className="skill-des">
+                <div className="skill-name">{data.name}</div>
+                <div className="skill-exp">{data.value}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="backendHead">Backend</div>
+      <div className="my-skills">
+        <div className="skill-heading">
+          <h2 className="skill-main-heading back-head">Languages</h2>
+        </div>
+        <div className="skill-description">
+          {backendLanguages.map((data, index) => {
+            return (
+              <div key={index} className="skill-des">
+                <div className="skill-name">{data.name}</div>
+                <div className="skill-exp">{data.value}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
-          <div class="card">
-            <div className="card-image">
-              <img src={css} alt="logo" />
-            </div>
-          </div>
+      <div className="my-skills">
+        <div className="skill-heading">
+          <h2 className="skill-main-heading back-head">Frameworks</h2>
+        </div>
+        <div className="skill-description">
+          {backendFrameworks.map((data, index) => {
+            return (
+              <div key={index} className="skill-des">
+                <div className="skill-name">{data.name}</div>
+                <div className="skill-exp">{data.value}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
-          <div class="card">
-            <div className="card-image">
-              <img src={js} alt="logo" />
-            </div>
-          </div>
-
-          <div class="card">
-            <div className="card-image">
-              <img src={react} alt="logo" />
-            </div>
-          </div>
-
-          <div class="card">
-            <div className="card-image">
-              <img src={bootstrap} alt="logo" />
-            </div>
-          </div>
-          <div class="card">
-            <div className="card-image">
-              <img src={clang} alt="logo" />
-            </div>
-          </div>
+      <div className="my-skills">
+        <div className="skill-heading">
+          <h2 className="skill-main-heading back-head">Database</h2>
+        </div>
+        <div className="skill-description">
+          {backendDatabases.map((data, index) => {
+            return (
+              <div key={index} className="skill-des">
+                <div className="skill-name">{data.name}</div>
+                <div className="skill-exp">{data.value}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

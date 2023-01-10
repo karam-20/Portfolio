@@ -15,7 +15,7 @@ const Whatsapp = () => {
           <FaWhatsapp
             className="icons-foo"
             size={31}
-            style={{ color: "#2db742" }}
+            style={{ color: "#5F4BB6" }}
           />
         </a>
       </div>

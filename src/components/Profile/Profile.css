@@ -1,11 +1,15 @@
 .content a {
   text-decoration: none;
-  padding: 11px 22px;
+  padding: 13px 25px;
   /* margin: 0 10px; */
   color: #5f4bb6;
   font-weight: 600;
-  background: rgb(134, 165, 217, 0.1);
-  border-radius: 12px;
+  background: rgba(28, 82, 175, 0.1);
+  border-radius: 8px;
+}
+
+.profile-js {
+  color: #5f4bb6;
 }
 .content a:hover {
   background: white;
@@ -13,52 +17,85 @@
   color: #5f4bb6;
   transition: 0.5s;
 }
-.btn {
-  /* border-radius: 50px; */
-  /* filter: drop-shadow(10px 17px 20px rgb(240, 89, 30, 0.4)); */
-}
 
 .profile {
   display: flex;
   align-items: center;
-  margin: 20px;
-  /* padding-top: px; */
+  margin: 20px 200px 20px 200px;
+
   justify-content: space-around;
   height: 95vh;
 }
+.profile-name {
+  font-weight: 700;
+  font-size: small;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 2px;
+}
+.animated-titles {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
 .profile-img img {
-  width: 550px;
+  width: 380px;
   margin-bottom: -45px;
 }
 .content p {
-  font-size: 23px;
-  margin-bottom: -30px;
+  font-size: 18px;
+  margin-top: -13px;
+  margin-bottom: 32px;
 }
-.content h1 {
-  font-size: 45px;
+.profile-info {
+  color: #fff;
+  font-weight: 300;
+  font-size: 5px;
 }
+
 .btn-light {
   margin-left: 30px;
 }
 .content {
   margin-top: -15px;
+  width: 30rem;
 }
 .resume-btn {
   margin-bottom: -4px;
   margin-left: 8px;
 }
+.resume-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 15px;
+  color: #5f4bb6;
+}
 @media (max-width: 768px) {
   .profile {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-left: 2.5rem;
+    width: 100vw;
     margin-top: 50px;
   }
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    margin-top: 20px;
   }
   .profile-img img {
-    width: 350px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+  .content h1 {
+    text-align: center;
   }
 }

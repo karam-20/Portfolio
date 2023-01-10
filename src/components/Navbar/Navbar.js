@@ -3,8 +3,14 @@ import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import logo from "./logo.png";
+import { VscGrabber, VscChromeClose } from "react-icons/vsc";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [navMenu, setNavMenu] = useState(false);
+  const clickHandler = () => {
+    setNavMenu(!navMenu);
+  };
   const activeLink = "active-nav-link";
   const normalLink = "non-active";
   return (
@@ -12,12 +18,13 @@ const Navbar = () => {
       <NavLink to="/">
         <img src={logo} alt="logo" />
       </NavLink>
-      <ul className="nav-menu">
+      <ul className={navMenu ? "nav-menu active-menu" : "nav-menu"}>
         <li>
           <NavLink
             exact
             to="/"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            onClick={() => clickHandler()}
           >
             Home
           </NavLink>
@@ -27,6 +34,7 @@ const Navbar = () => {
             exact
             to="/about"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            onClick={() => clickHandler()}
           >
             About
           </NavLink>
@@ -36,6 +44,7 @@ const Navbar = () => {
             exact
             to="/project"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            onClick={() => clickHandler()}
           >
             Projects
           </NavLink>
@@ -46,11 +55,15 @@ const Navbar = () => {
             exact
             to="/contact"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            onClick={() => clickHandler()}
           >
             Contact
           </NavLink>
         </li>
       </ul>
+      <div className="mobile-nav-icon" onClick={() => clickHandler()}>
+        {navMenu ? <VscChromeClose /> : <VscGrabber />}
+      </div>
     </div>
   );
 };

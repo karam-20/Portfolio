@@ -35,3 +35,45 @@
   margin-top: -23px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .hero-img {
+    width: 120.1vw;
+    height: 30vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  .hero-img::before {
+    content: "";
+    background: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center top;
+    /* height: 100%; */
+    width: 120.1vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .heading {
+    height: 90%;
+
+    left: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 93px;
+    color: white;
+  }
+  .hero-img h1 {
+    font-size: 2rem;
+    margin-left: 80px;
+  }
+  .hero-img p {
+    font-size: 1rem;
+    margin-top: -23px;
+    text-align: center;
+    margin-left: 80px;
+  }
+}

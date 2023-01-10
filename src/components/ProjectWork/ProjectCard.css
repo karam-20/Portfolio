@@ -47,6 +47,6 @@
 }
 @media (max-width: 768px) {
   .project-card-container {
-    margin: 10 50px;
+    margin: 20px;
   }
 }

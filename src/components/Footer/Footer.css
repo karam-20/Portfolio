@@ -66,3 +66,8 @@
 .footer-btn {
   margin-left: 9px;
 }
+@media (max-width: 768px) {
+  .footer {
+    width: 100vw;
+  }
+}

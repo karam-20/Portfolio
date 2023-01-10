@@ -23,3 +23,15 @@
   color: #262626;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .whatsapp {
+    margin-right: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+  }
+  .box-text {
+    font-size: 10px;
+  }
+}
