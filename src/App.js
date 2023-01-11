@@ -8,12 +8,9 @@ import { Route, Routes } from "react-router-dom";
 
 import Whatsapp from "./Routes/Whatsapp";
 
-
 const App = () => {
-  
   return (
     <>
-    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
