@@ -74,5 +74,23 @@
   .container-ctc {
     width: 100vw;
     margin-left: 2.8rem;
+    margin-top: 2rem;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+  }
+  .input-feild {
+    width: 23.5rem;
+    margin-left: -2rem;
+  }
+  .heading-ctc {
+    margin-left: 0;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+  .contact-btn {
+    margin-left: 6.7rem;
   }
 }

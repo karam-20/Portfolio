@@ -62,7 +62,11 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="mobile-nav-icon" onClick={() => clickHandler()}>
-        {navMenu ? <VscChromeClose /> : <VscGrabber />}
+        {navMenu ? (
+          <VscChromeClose color="white" />
+        ) : (
+          <VscGrabber color="white" />
+        )}
       </div>
     </div>
   );

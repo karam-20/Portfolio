@@ -46,8 +46,12 @@
 }
 
 .about-img img {
-  width: 340px;
-  border-radius: 50%;
+  width: 320px;
+  border-bottom: 20px solid #fff;
+  border-top: 6px solid #fff;
+  border-left: 6px solid #fff;
+  border-right: 6px solid #fff;
+
   filter: drop-shadow(10px 30px 20px rgba(167, 133, 247, 0.1));
 }
 .about-title {
@@ -142,11 +146,32 @@
 @media (max-width: 768px) {
   .AboutMeContainer {
     display: flex;
-    margin-left: 8.5rem;
+
+    margin-top: 5rem;
+
     flex-direction: column;
+    margin-left: 14.7rem;
+  }
+  .my-skills {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 3rem;
+    gap: 1.5rem;
+  }
+  .backendHead {
+    margin-left: 3rem;
+    margin-bottom: -3rem;
+  }
+  .back-head {
+    position: relative;
+    left: 0px;
+    font-size: 30px;
   }
   .about-title {
     width: 100vw;
+  }
+  .skill-name {
+    width: 250px;
   }
   .about-title p {
     margin: 10px;
@@ -154,5 +179,11 @@
 
   .about-img img {
     margin-top: 40px;
+    margin-right: 0rem;
+  }
+  .skill-des {
+    display: flex;
+    justify-content: space-between;
+    gap: 5.5rem;
   }
 }
